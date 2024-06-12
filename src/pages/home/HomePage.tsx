@@ -102,7 +102,7 @@ export default function HomePage() {
 								animate={{ opacity: 1, x: '-90%', y: -10 }}
 								transition={transition}
 							>
-								<Elem14 className="@[300px]:h-[50px] @[500px]:h-[100px] @[700px]:h-[130px] @[900px]:h-[170px] @[1100px]:h-[200px] h-[50px]" />
+								<Elem14 className="@[300px]:h-[90px] @[500px]:h-[100px] @[700px]:h-[130px] @[900px]:h-[170px] @[1100px]:h-[200px] h-[50px]" />
 							</motion.div>
 							<motion.div
 								className="absolute z-20  "
