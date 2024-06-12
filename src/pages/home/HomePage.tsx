@@ -160,7 +160,7 @@ export default function HomePage() {
 						<div className="">
 							<div className=" flex items-center justify-center ">
 								<div className="flex items-center justify-center">
-									<Fraza className="@[300px]:h-[70px] @[500px]:h-[80px] @[700px]:h-[100px] @[900px]:h-[120px] @[1100px]:h-[170px] h-[50px]" />
+									<Fraza className="@[300px]:h-[90px] @[500px]:h-[80px] @[700px]:h-[100px] @[900px]:h-[120px] @[1100px]:h-[170px] h-[50px]" />
 								</div>
 							</div>
 						</div>
