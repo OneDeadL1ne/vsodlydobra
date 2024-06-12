@@ -110,7 +110,7 @@ export default function HomePage() {
 								animate={{ opacity: 1, x: '-90%', y: '120%' }}
 								transition={transition}
 							>
-								<Elem15 className="@[300px]:h-[20px] @[500px]:h-[45px] @[700px]:h-[65px] @[900px]:h-[90px] @[1100px]:h-[100px] h-[50px]" />
+								<Elem15 className="@[300px]:h-[40px] @[500px]:h-[45px] @[700px]:h-[65px] @[900px]:h-[90px] @[1100px]:h-[100px] h-[50px]" />
 							</motion.div>
 							<motion.div
 								className="absolute z-30  "
@@ -118,7 +118,7 @@ export default function HomePage() {
 								animate={{ opacity: 1, x: '-80%', y: '-10%' }}
 								transition={transition}
 							>
-								<Elem10 className="@[300px]:h-[50px] @[500px]:h-[100px] @[700px]:h-[130px] @[900px]:h-[170px] @[1100px]:h-[200px] h-[50px]" />
+								<Elem10 className="@[300px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[130px] @[900px]:h-[170px] @[1100px]:h-[200px] h-[50px]" />
 							</motion.div>
 							<motion.div
 								className="absolute z-10  "
@@ -126,7 +126,7 @@ export default function HomePage() {
 								animate={{ opacity: 1, x: '-50%', y: '30%' }}
 								transition={transition}
 							>
-								<Elem11 className="@[300px]:h-[60px] @[500px]:h-[100px] @[700px]:h-[160px] @[900px]:h-[200px] @[1100px]:h-[250px] h-[50px]" />
+								<Elem11 className="@[300px]:h-[90px] @[500px]:h-[100px] @[700px]:h-[160px] @[900px]:h-[200px] @[1100px]:h-[250px] h-[50px]" />
 							</motion.div>
 							<motion.div
 								className="absolute z-10  "
