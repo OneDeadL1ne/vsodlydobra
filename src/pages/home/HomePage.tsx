@@ -16,30 +16,43 @@ import Telegram from '@/assets/icons/TG.svg?react';
 import VK from '@/assets/icons/VK.svg?react';
 
 import PeopleTwo from '@/assets/people_2.svg?react';
+import PeopleSix from '@/assets/people_6.svg?react';
 import PeopleThree from '@/assets/people_3.svg?react';
 import PeopleFive from '@/assets/people_5.svg?react';
 import PeopleFour from '@/assets/people_4.svg?react';
 
 import { CustomCarousel } from '@/components/Carousel';
+import { motion } from 'framer-motion';
 
+const transition = { type: 'keyframes', duration: 1 };
 export default function HomePage() {
 	return (
 		<div className="h-full @container">
 			<div className="  ">
 				<div className=" h-full flex flex-col justify-end items-center">
-					<div className=" flex-grow ">
+					<div className="flex-grow ">
 						<div className="flex items-center justify-center h-full mt-20 mb-20">
 							<Fraza className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 						</div>
 					</div>
-					<div className="flex animate-spin">
-						<PeopleTwo height={100} className="animate-spin" />
-						<PeopleThree height={110} className="animate-spin" />
+					<div className="flex ">
+						<motion.div
+							initial={{ opacity: 0, x: '-100%', y: 0 }}
+							animate={{ opacity: 1, x: 0, y: 0 }}
+							transition={transition}
+						>
+							<PeopleSix className="h-[153px] @[300px]:h-[205px] @[400px]:h-[305px] @[500px]:h-[376px] @[700px]:h-[458px] @[900px]:h-[507px] @[1000px]:h-[507px]  " />
+						</motion.div>
 
-						<PeopleFour height={100} />
-						<PeopleFive height={100} className="animate-spin" />
+						<PeopleFour className="h-[150px] @[300px]:h-[200px] @[400px]:h-[300px] @[500px]:h-[370px] @[700px]:h-[450px] @[900px]:h-[500px] @[1000px]:h-[500px]  " />
+						<motion.div
+							initial={{ opacity: 0, x: '100%', y: 0 }}
+							animate={{ opacity: 1, x: 0, y: 0 }}
+							transition={transition}
+						>
+							<PeopleFive className="h-[155px] @[300px]:h-[210px] @[400px]:h-[310px] @[500px]:h-[383px] @[700px]:h-[465px] @[900px]:h-[520px] @[1000px]:h-[520px]  " />
+						</motion.div>
 					</div>
-					<PeopleOne className="h-[150px] @[300px]:h-[200px] @[400px]:h-[300px] @[500px]:h-[370px] @[700px]:h-[450px] @[900px]:h-[500px] @[1000px]:h-[500px]  " />
 				</div>
 			</div>
 			<div className=" mt-10 mb-20  @[900px]:mb-0">
