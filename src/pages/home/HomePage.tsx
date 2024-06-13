@@ -24,10 +24,10 @@ import { CustomCarousel } from '@/components/Carousel';
 export default function HomePage() {
 	return (
 		<div className="h-full @container">
-			<div className="h-screen   ">
+			<div className="  ">
 				<div className=" h-full flex flex-col justify-end items-center">
 					<div className=" flex-grow ">
-						<div className="flex items-center justify-center h-full">
+						<div className="flex items-center justify-center h-full mt-20 mb-20">
 							<Fraza className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 						</div>
 					</div>
