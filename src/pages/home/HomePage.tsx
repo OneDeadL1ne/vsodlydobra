@@ -1,178 +1,193 @@
-import { motion } from 'framer-motion';
-import Elem1 from '@/assets/elements/1.svg?react';
-import Elem2 from '@/assets/elements/2.svg?react';
-import Elem3 from '@/assets/elements/3.svg?react';
-import Elem4 from '@/assets/elements/4.svg?react';
-import Elem5 from '@/assets/elements/5.svg?react';
-import Elem6 from '@/assets/elements/6.svg?react';
-import Elem7 from '@/assets/elements/7.svg?react';
-import Elem8 from '@/assets/elements/8.svg?react';
-import Elem9 from '@/assets/elements/9.svg?react';
-import Elem10 from '@/assets/elements/10.svg?react';
-import Elem11 from '@/assets/elements/11.svg?react';
-import Elem12 from '@/assets/elements/12.svg?react';
-import Elem13 from '@/assets/elements/13.svg?react';
-import Elem14 from '@/assets/elements/14.svg?react';
-import Elem15 from '@/assets/elements/15.svg?react';
-import Fraza from '@/assets/elements/Fraza.svg?react';
+import Fraza from '@/assets/Fraza.svg?react';
+import Logo from '@/assets/Logo.svg?react';
+import TitleOne from '@/assets/Title_1.svg?react';
+import TitleTwo from '@/assets/Title_2.svg?react';
+import TitleThree from '@/assets/Title_3.svg?react';
+import TitleFour from '@/assets/Title_4.svg?react';
+import TitleFive from '@/assets/Title_5.svg?react';
+import PeopleOne from '@/assets/people_1.svg?react';
+import IconOne from '@/assets/icons/1.svg?react';
+import IconTwo from '@/assets/icons/2.svg?react';
+import IconThree from '@/assets/icons/3.svg?react';
+import IconFour from '@/assets/icons/4.svg?react';
+import IconFive from '@/assets/icons/5.svg?react';
+import IconSix from '@/assets/icons/6.svg?react';
+import Telegram from '@/assets/icons/TG.svg?react';
+import VK from '@/assets/icons/VK.svg?react';
+
+import PeopleTwo from '@/assets/people_2.svg?react';
+
+import PeopleFour from '@/assets/people_4.svg?react';
+
+import { CustomCarousel } from '@/components/Carousel';
+
 export default function HomePage() {
-	const initial = { opacity: 0, x: '-100%', y: 0 };
-
-	const transition = { type: 'keyframes', duration: 1 };
 	return (
-		<div>
-			<div className="@container h-screen">
-				<div className="relative grid grid-cols-2 h-full">
-					<div>
-						<div className=" h-full w-screen">
-							<motion.div
-								className="absolute z-30 top-0"
-								initial={{ opacity: 0, x: '-100%', y: '-10%' }}
-								animate={{ opacity: 1, x: '50%', y: '-10%' }}
-								transition={transition}
-							>
-								<Elem4 className="@[300px]:h-[105px] @[500px]:h-[130px] @[700px]:h-[150px] @[900px]:h-[265px] @[1100px]:h-[265px] h-[100px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-20"
-								initial={{ opacity: 0, x: '-100%', y: 20 }}
-								animate={{ opacity: 1, x: -50, y: 20 }}
-								transition={transition}
-							>
-								<Elem1 className="@[300px]:h-[40px] @[500px]:h-[50px] @[700px]:h-[60px] @[900px]:h-[70px] @[1100px]:h-[94px] h-[30px]" />
-							</motion.div>
+		<div className="h-full @container">
+			<div className="h-screen   ">
+				<div className=" h-full flex flex-col justify-end items-center">
+					<div className="mb-10">
+						<Fraza height={100} />
+					</div>
 
-							<motion.div
-								className="absolute  z-20"
-								initial={{ opacity: 0, x: '-100%', y: 100 }}
-								animate={{ opacity: 1, x: -50, y: 100 }}
-								transition={transition}
-							>
-								<Elem13 className="@[300px]:h-[40px] @[500px]:h-[50px] @[700px]:h-[60px] @[900px]:h-[70px] @[1100px]:h-[94px] h-[50px]" />
-							</motion.div>
-						</div>
-						<div>
-							<motion.div
-								className="absolute z-20 left-0 bottom-0"
-								initial={initial}
-								animate={{ opacity: 1, x: -50, y: 20 }}
-								transition={transition}
-							>
-								<Elem2 className="@[300px]:h-[300px] @[500px]:h-[400px] @[700px]:h-[470px] @[900px]:h-[500px] @[1100px]:h-[550px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-30 left-0 bottom-0"
-								initial={initial}
-								animate={{ opacity: 1, x: '85%', y: '-40%' }}
-								transition={transition}
-							>
-								<Elem3 className="@[300px]:h-[150px] @[500px]:h-[220px] @[700px]:h-[270px] @[900px]:h-[300px] @[1100px]:h-[320px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-50 left-0 bottom-0"
-								initial={initial}
-								animate={{ opacity: 1, x: '-15%', y: '-40%' }}
-								transition={transition}
-							>
-								<Elem5 className="@[300px]:h-[130px] @[500px]:h-[160px] @[700px]:h-[200px] @[900px]:h-[230px] @[1100px]:h-[250px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-0 left-0 bottom-0"
-								initial={initial}
-								animate={{ opacity: 1, x: '55%', y: '-25%' }}
-								transition={transition}
-							>
-								<Elem12 className="@[300px]:h-[100px] @[500px]:h-[150px] @[700px]:h-[190px] @[900px]:h-[220px] @[1100px]:h-[230px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-20 left-0 bottom-0"
-								initial={initial}
-								animate={{ opacity: 1, x: '30%', y: '15%' }}
-								transition={transition}
-							>
-								<Elem6 className="@[300px]:h-[110px] @[500px]:h-[140px] @[700px]:h-[180px] @[900px]:h-[210px] @[1100px]:h-[240px] h-[50px]" />
-							</motion.div>
+					<PeopleOne height={500} className="" />
+				</div>
+			</div>
+			<div className="h-screen mt-10">
+				<div className="mt-10">
+					<Logo height={150} />
+				</div>
+				<div className="grid grid-cols-2">
+					<div className="">
+						<div className="mt-6">
+							<TitleOne height={70} className="mb-6" />
+							<p className="text-3xl text-balance  font-medium pr-5">
+								Волонтёрское движение Колледжа декоративно-прикладного искусства им.
+								Карла Фаберже объединяет студентов, преподавателей и сотрудников,
+								которые стремятся внести свой вклад в общественное благо. Наша
+								миссия заключается в развитии и поддержке духовных, нравственных и
+								культурных ценностей через активное участие в различных волонтёрских
+								проектах и инициативах.
+							</p>
 						</div>
 					</div>
-					<div className="flex justify-end">
-						<div className=" ">
-							<motion.div
-								className="absolute z-20 "
-								initial={{ opacity: 0, x: '100%' }}
-								animate={{ opacity: 1, x: '-90%', y: -10 }}
-								transition={transition}
-							>
-								<Elem14 className="@[300px]:h-[90px] @[500px]:h-[100px] @[700px]:h-[130px] @[900px]:h-[170px] @[1100px]:h-[200px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-20  "
-								initial={{ opacity: 0, x: '100%', y: '100%' }}
-								animate={{ opacity: 1, x: '-90%', y: '120%' }}
-								transition={transition}
-							>
-								<Elem15 className="@[300px]:h-[40px] @[500px]:h-[45px] @[700px]:h-[65px] @[900px]:h-[90px] @[1100px]:h-[100px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-30  "
-								initial={{ opacity: 0, x: '100%', y: '-20%' }}
-								animate={{ opacity: 1, x: '-80%', y: '-10%' }}
-								transition={transition}
-							>
-								<Elem10 className="@[300px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[130px] @[900px]:h-[170px] @[1100px]:h-[200px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-10  "
-								initial={{ opacity: 0, x: '100%', y: '30%' }}
-								animate={{ opacity: 1, x: '-50%', y: '30%' }}
-								transition={transition}
-							>
-								<Elem11 className="@[300px]:h-[90px] @[500px]:h-[100px] @[700px]:h-[160px] @[900px]:h-[200px] @[1100px]:h-[250px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-10  "
-								initial={{ opacity: 0, x: '100%', y: '40%' }}
-								animate={{ opacity: 1, x: '-80%', y: '40%' }}
-								transition={transition}
-							>
-								<Elem9 className="@[300px]:h-[100px] @[500px]:h-[180px] @[700px]:h-[300px] @[900px]:h-[360px] @[1100px]:h-[400px] h-[50px]" />
-							</motion.div>
-						</div>
-						<div className="absolute bottom-0">
-							<motion.div
-								className="absolute z-20  "
-								initial={{ opacity: 0, x: '100%', y: '-100%' }}
-								animate={{ opacity: 1, x: '-90%', y: '-100%' }}
-								transition={transition}
-							>
-								<Elem7 className="@[300px]:h-[250px] @[500px]:h-[310px] @[700px]:h-[390px] @[900px]:h-[410px] @[1100px]:h-[500px] h-[50px]" />
-							</motion.div>
-							<motion.div
-								className="absolute z-10  "
-								initial={{ opacity: 0, x: '100%', y: '-100%' }}
-								animate={{ opacity: 1, x: '-80%', y: '-100%' }}
-								transition={transition}
-							>
-								<Elem8 className="@[300px]:h-[50px] @[500px]:h-[100px] @[700px]:h-[130px] @[900px]:h-[170px] @[1100px]:h-[200px] h-[50px]" />
-							</motion.div>
-						</div>
-					</div>
-					<div className="absolute z-50 h-full w-screen flex items-center justify-center">
-						<div className="">
-							<div className=" flex items-center justify-center ">
-								<div className="flex items-center justify-center">
-									<Fraza className="@[300px]:h-[90px] @[500px]:h-[80px] @[700px]:h-[100px] @[900px]:h-[120px] @[1100px]:h-[170px] h-[50px]" />
-								</div>
+
+					<div className="grid grid-cols-2 gap-10 mt-10 ">
+						<div className="grid grid-rows-2 gap-5">
+							<div className="h-[250px]">
+								<img
+									src="/1.png"
+									className="object-cover h-full w-full object-center rounded-3xl"
+								/>
 							</div>
+							<div className="h-[250px] ">
+								<img
+									src="/3.png"
+									className="object-cover h-full w-full object-center rounded-3xl"
+								/>
+							</div>
+						</div>
+
+						<div className="">
+							<img
+								src="/2.png"
+								className="object-cover h-full w-full object-center rounded-3xl"
+							/>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className="h-screen">1</div>
-			<div className="h-screen">2</div>
-			<div className="h-screen">3</div>
-			<div className="h-screen">4</div>
-			<div className="h-screen">5</div>
-			<div className="h-screen">6</div>
+			<div className="mb-20 mt-10">
+				<div>
+					<TitleTwo height={100} />
+				</div>
+
+				<div className="flex items-center  justify-center mt-10">
+					<div className="grid auto-rows-fr  gap-10 grid-cols-3 ">
+						<div className=" flex flex-col  items-center justify-center">
+							<IconOne height={150} />
+							<p className="text-xl text-center w-[200px] text-balance  font-medium">
+								Проведением открытых уроков
+							</p>
+						</div>
+						<div className="flex flex-col items-center justify-center">
+							<IconTwo height={150} />
+							<p className="text-xl text-center text-balance  font-medium">
+								Помощью в приютах для бездомных животных
+							</p>
+						</div>
+						<div className="flex flex-col items-center justify-center">
+							<IconThree height={150} />
+							<p className="text-xl text-center text-balance  font-medium">
+								Помощью ветеранам Великой Отечественной войны
+							</p>
+						</div>
+						<div className="flex flex-col items-center justify-center">
+							<IconFour height={150} />
+							<p className="text-xl text-center text-balance  font-medium">
+								Созданием открыток на разные мероприяти
+							</p>
+						</div>
+
+						<div className="flex flex-col items-center justify-center">
+							<IconFive height={150} />
+							<p className="text-xl w-[100px] text-center text-balance  font-medium">
+								Высадкой деревьев
+							</p>
+						</div>
+						<div className="flex flex-col items-center justify-center">
+							<IconSix height={150} />
+							<p className="text-xl w-[250px] text-center text-balance  font-medium">
+								Уборкой территории колледжа
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="mb-20 mt-10">
+				<div>
+					<TitleThree height={100} />
+				</div>
+				<div className="grid grid-cols-3 gap-10 mt-10">
+					<div className="h-[400px] bg-[#F29073] rounded-2xl flex flex-col items-center justify-center p-10">
+						<div className="h-[270px] w-full ">
+							<img
+								src="/Women_1.jpg"
+								className="object-cover h-full w-full object-center rounded-2xl "
+							/>
+						</div>
+						<p className="text-xl w-[250px] mt-3 text-center text-balance  font-medium text-white">
+							Студентка группы ДЮ-1 Ксения Шумилова
+						</p>
+					</div>
+					<div className="h-[400px] bg-[#F29073] rounded-2xl flex flex-col items-center justify-center p-10">
+						<div className="h-[270px] w-full ">
+							<img
+								src="/Women_2.jpg"
+								className="object-cover h-full w-full object-center rounded-xl"
+							/>
+						</div>
+						<p className="text-xl w-[250px] mt-3 text-center   font-medium text-white">
+							Студентка группы Л-2 Софья Андреева
+						</p>
+					</div>
+					<div className="h-[400px] bg-[#F29073] rounded-2xl flex flex-col items-center justify-center p-10">
+						<div className="h-[270px] w-full ">
+							<img
+								src="/Women_3.jpg"
+								className="object-cover h-full w-full object-center rounded-xl"
+							/>
+						</div>
+						<p className="text-xl w-[250px] mt-3 text-center text-balance  font-medium text-white">
+							Студентка группы Р-3 Косткина Анастасия
+						</p>
+					</div>
+				</div>
+			</div>
+			<div className="mb-20">
+				<div>
+					<TitleFour height={100} />
+				</div>
+				<div className="flex items-center mt-10">
+					<CustomCarousel />
+				</div>
+			</div>
+
+			<div className="min-h-screen flex flex-col relative ">
+				<div className="flex-grow mt-10">
+					<TitleFive height={100} />
+					<div className="flex  justify-center flex-col mt-20">
+						<Logo height={200} />
+						<div className="flex justify-center items-center gap-10">
+							<Telegram height={100} />
+							<VK height={100} />
+						</div>
+					</div>
+				</div>
+
+				<PeopleTwo height={350} className="absolute bottom-0" />
+				<PeopleFour height={500} className="absolute bottom-0 right-0" />
+			</div>
 		</div>
 	);
 }
