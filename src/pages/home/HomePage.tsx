@@ -35,15 +35,15 @@ export default function HomePage() {
 					<PeopleOne className="h-[150px] @[300px]:h-[200px] @[400px]:h-[300px] @[500px]:h-[370px] @[700px]:h-[450px] @[900px]:h-[500px] @[1000px]:h-[500px]  " />
 				</div>
 			</div>
-			<div className="h-screen mt-10">
+			<div className="h-screen mt-10 mb-40  @[900px]:mb-10">
 				<div className="mt-10">
 					<Logo className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[150px]  " />
 				</div>
-				<div className="grid grid-cols-2">
+				<div className="grid grid-cols-1 @[900px]:grid-cols-2  ">
 					<div className="">
 						<div className="mt-6">
 							<TitleOne className="mb-6 h-[40px] @[300px]:h-[40px] @[400px]:h-[40px] @[500px]:h-[50px] @[700px]:h-[60px] @[900px]:h-[70px] @[1000px]:h-[70px]  " />
-							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-3xl @[1000px]:text-3xl  text-balance  font-medium pr-5">
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-lg @[700px]:text-xl @[900px]:text-2xl @[1100px]:text-3xl @[1200px]:text-3xl  text-balance  font-medium pr-5">
 								Волонтёрское движение Колледжа декоративно-прикладного искусства им.
 								Карла Фаберже объединяет студентов, преподавателей и сотрудников,
 								которые стремятся внести свой вклад в общественное благо. Наша
@@ -54,7 +54,7 @@ export default function HomePage() {
 						</div>
 					</div>
 
-					<div className="grid grid-cols-2 gap-10 mt-10 ">
+					<div className="grid grid-cols-1 @[500px]:grid-cols-2 gap-10 mt-10 ">
 						<div className="grid grid-rows-2 gap-5">
 							<div className="h-[250px]">
 								<img
@@ -62,7 +62,7 @@ export default function HomePage() {
 									className="object-cover h-full w-full object-center rounded-3xl"
 								/>
 							</div>
-							<div className="h-[250px] ">
+							<div className="h-[250px]  ">
 								<img
 									src="/3.png"
 									className="object-cover h-full w-full object-center rounded-3xl"
@@ -70,7 +70,7 @@ export default function HomePage() {
 							</div>
 						</div>
 
-						<div className="">
+						<div className="hidden  @[500px]:inline-flex">
 							<img
 								src="/2.png"
 								className="object-cover h-full w-full object-center rounded-3xl"
@@ -79,9 +79,9 @@ export default function HomePage() {
 					</div>
 				</div>
 			</div>
-			<div className="mb-20 mt-10">
+			<div className=" mb-20 ">
 				<div>
-					<TitleTwo className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
+					<TitleTwo className=" h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 				</div>
 
 				<div className="flex items-center  justify-center mt-10">
@@ -177,18 +177,20 @@ export default function HomePage() {
 
 			<div className="min-h-screen flex flex-col relative ">
 				<div className="flex-grow mt-10">
-					<TitleFive className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
+					<TitleFive className="h-[40px] @[300px]:h-[50px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 					<div className="flex  justify-center flex-col mt-20">
 						<Logo height={200} />
 						<div className="flex justify-center items-center gap-10">
-							<Telegram height={100} />
-							<VK height={100} />
+							<Telegram className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
+							<VK className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 						</div>
 					</div>
 				</div>
 
-				<PeopleTwo height={350} className="absolute bottom-0" />
-				<PeopleFour height={500} className="absolute bottom-0 right-0" />
+				<PeopleTwo className="hidden @[300px]:inline-flex h-0 @[500px]:h-[250px] @[700px]:h-[300px] @[900px]:h-[350px] @[1000px]:h-[350px] absolute bottom-0 " />
+				<div className="flex items-center justify-center">
+					<PeopleFour className="h-[350px]  @[300px]:h-[350px] @[400px]:h-[300px] @[500px]:h-[350px] @[700px]:h-[400px] @[900px]:h-[500px] @[1000px]:h-[500px] absolute bottom-0 @[500px]:right-0 " />
+				</div>
 			</div>
 		</div>
 	);
