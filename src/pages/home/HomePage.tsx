@@ -24,7 +24,7 @@ import PeopleFour from '@/assets/people_4.svg?react';
 import { CustomCarousel } from '@/components/Carousel';
 import { motion } from 'framer-motion';
 
-const transition = { type: 'keyframes', duration: 5 };
+const transition = { type: 'keyframes', duration: 3 };
 export default function HomePage() {
 	return (
 		<div className="h-full @container">
