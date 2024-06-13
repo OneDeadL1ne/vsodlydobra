@@ -64,10 +64,14 @@ export function CustomCarousel() {
 	];
 
 	return (
-		<Carousel plugins={[plugin.current]} opts={{ loop: true }} className="w-full max-w-7xl">
+		<Carousel
+			plugins={[plugin.current]}
+			opts={{ loop: true }}
+			className="w-full max-w-7xl @container "
+		>
 			<CarouselContent>
 				{fotos.map((item) => (
-					<CarouselItem key={item.id} className="basis-1/3">
+					<CarouselItem key={item.id} className="basis-2/3  @[1000px]:basis-1/3">
 						<div className="p-1">
 							<Card className="bg-transparent border-none shadow-none">
 								<CardContent className="flex aspect-square items-center justify-center p-1">

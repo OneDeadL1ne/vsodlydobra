@@ -26,22 +26,24 @@ export default function HomePage() {
 		<div className="h-full @container">
 			<div className="h-screen   ">
 				<div className=" h-full flex flex-col justify-end items-center">
-					<div className="mb-10">
-						<Fraza height={100} />
+					<div className=" flex-grow ">
+						<div className="flex items-center justify-center h-full">
+							<Fraza className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
+						</div>
 					</div>
 
-					<PeopleOne height={500} className="" />
+					<PeopleOne className="h-[150px] @[300px]:h-[200px] @[400px]:h-[300px] @[500px]:h-[370px] @[700px]:h-[450px] @[900px]:h-[500px] @[1000px]:h-[500px]  " />
 				</div>
 			</div>
 			<div className="h-screen mt-10">
 				<div className="mt-10">
-					<Logo height={150} />
+					<Logo className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[150px]  " />
 				</div>
 				<div className="grid grid-cols-2">
 					<div className="">
 						<div className="mt-6">
-							<TitleOne height={70} className="mb-6" />
-							<p className="text-3xl text-balance  font-medium pr-5">
+							<TitleOne className="mb-6 h-[40px] @[300px]:h-[40px] @[400px]:h-[40px] @[500px]:h-[50px] @[700px]:h-[60px] @[900px]:h-[70px] @[1000px]:h-[70px]  " />
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-3xl @[1000px]:text-3xl  text-balance  font-medium pr-5">
 								Волонтёрское движение Колледжа декоративно-прикладного искусства им.
 								Карла Фаберже объединяет студентов, преподавателей и сотрудников,
 								которые стремятся внести свой вклад в общественное благо. Наша
@@ -79,45 +81,45 @@ export default function HomePage() {
 			</div>
 			<div className="mb-20 mt-10">
 				<div>
-					<TitleTwo height={100} />
+					<TitleTwo className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 				</div>
 
 				<div className="flex items-center  justify-center mt-10">
-					<div className="grid auto-rows-fr  gap-10 grid-cols-3 ">
+					<div className="grid auto-rows-fr  gap-10 @[1000px]:grid-cols-3 grid-cols-2 ">
 						<div className=" flex flex-col  items-center justify-center">
-							<IconOne height={150} />
-							<p className="text-xl text-center w-[200px] text-balance  font-medium">
+							<IconOne className="h-[70px] @[300px]:h-[70px] @[400px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[120px] @[900px]:h-[150px] @[1000px]:h-[150px]  " />
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-xl @[1000px]:text-xl text-center w-[200px] text-balance  font-medium">
 								Проведением открытых уроков
 							</p>
 						</div>
 						<div className="flex flex-col items-center justify-center">
-							<IconTwo height={150} />
-							<p className="text-xl text-center text-balance  font-medium">
+							<IconTwo className="h-[70px] @[300px]:h-[70px] @[400px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[120px] @[900px]:h-[150px] @[1000px]:h-[150px]  " />
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-xl @[1000px]:text-xl text-center text-balance  font-medium">
 								Помощью в приютах для бездомных животных
 							</p>
 						</div>
 						<div className="flex flex-col items-center justify-center">
-							<IconThree height={150} />
-							<p className="text-xl text-center text-balance  font-medium">
+							<IconThree className="h-[70px] @[300px]:h-[70px] @[400px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[120px] @[900px]:h-[150px] @[1000px]:h-[150px]  " />
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-xl @[1000px]:text-xl text-center text-balance  font-medium">
 								Помощью ветеранам Великой Отечественной войны
 							</p>
 						</div>
 						<div className="flex flex-col items-center justify-center">
-							<IconFour height={150} />
-							<p className="text-xl text-center text-balance  font-medium">
-								Созданием открыток на разные мероприяти
+							<IconFour className="h-[70px] @[300px]:h-[70px] @[400px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[120px] @[900px]:h-[150px] @[1000px]:h-[150px]  " />
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-xl @[1000px]:text-xl text-center text-balance  font-medium">
+								Созданием открыток на разные мероприятия
 							</p>
 						</div>
 
 						<div className="flex flex-col items-center justify-center">
-							<IconFive height={150} />
-							<p className="text-xl w-[100px] text-center text-balance  font-medium">
+							<IconFive className="h-[70px] @[300px]:h-[70px] @[400px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[120px] @[900px]:h-[150px] @[1000px]:h-[150px]  " />
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-xl @[1000px]:text-xl w-[100px] text-center text-balance  font-medium">
 								Высадкой деревьев
 							</p>
 						</div>
 						<div className="flex flex-col items-center justify-center">
-							<IconSix height={150} />
-							<p className="text-xl w-[250px] text-center text-balance  font-medium">
+							<IconSix className="h-[70px] @[300px]:h-[70px] @[400px]:h-[80px] @[500px]:h-[100px] @[700px]:h-[120px] @[900px]:h-[150px] @[1000px]:h-[150px]  " />
+							<p className="text-sm @[300px]:text-base @[400px]:text-base @[500px]:text-base @[700px]:text-lg @[900px]:text-xl @[1000px]:text-xl w-[150px] @[370px]:w-[250px] text-center text-balance  font-medium">
 								Уборкой территории колледжа
 							</p>
 						</div>
@@ -126,10 +128,10 @@ export default function HomePage() {
 			</div>
 			<div className="mb-20 mt-10">
 				<div>
-					<TitleThree height={100} />
+					<TitleThree className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 				</div>
-				<div className="grid grid-cols-3 gap-10 mt-10">
-					<div className="h-[400px] bg-[#F29073] rounded-2xl flex flex-col items-center justify-center p-10">
+				<div className="flex flex-col items-center @[850px]:grid  @[850px]:grid-cols-3 gap-10 mt-10">
+					<div className="@[850px]:h-[400px] @[850px]:w-full bg-[#F29073] rounded-2xl flex flex-col items-center justify-center p-10">
 						<div className="h-[270px] w-full ">
 							<img
 								src="/Women_1.jpg"
@@ -166,7 +168,7 @@ export default function HomePage() {
 			</div>
 			<div className="mb-20">
 				<div>
-					<TitleFour height={100} />
+					<TitleFour className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 				</div>
 				<div className="flex items-center mt-10">
 					<CustomCarousel />
@@ -175,7 +177,7 @@ export default function HomePage() {
 
 			<div className="min-h-screen flex flex-col relative ">
 				<div className="flex-grow mt-10">
-					<TitleFive height={100} />
+					<TitleFive className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 					<div className="flex  justify-center flex-col mt-20">
 						<Logo height={200} />
 						<div className="flex justify-center items-center gap-10">
