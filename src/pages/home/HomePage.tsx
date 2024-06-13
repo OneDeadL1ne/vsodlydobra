@@ -35,7 +35,7 @@ export default function HomePage() {
 					<PeopleOne className="h-[150px] @[300px]:h-[200px] @[400px]:h-[300px] @[500px]:h-[370px] @[700px]:h-[450px] @[900px]:h-[500px] @[1000px]:h-[500px]  " />
 				</div>
 			</div>
-			<div className="h-screen mt-10 mb-40  @[900px]:mb-10">
+			<div className=" mt-10 mb-20  @[900px]:mb-0">
 				<div className="mt-10">
 					<Logo className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[150px]  " />
 				</div>
@@ -70,16 +70,16 @@ export default function HomePage() {
 							</div>
 						</div>
 
-						<div className="hidden  @[500px]:inline-flex">
+						<div className="hidden h-[520px]   @[500px]:inline-flex">
 							<img
 								src="/2.png"
-								className="object-cover h-full w-full object-center rounded-3xl"
+								className="object-cover  h-full w-full object-center rounded-3xl"
 							/>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div className=" mb-20 ">
+			<div className=" mb-20 mt-20">
 				<div>
 					<TitleTwo className=" h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 				</div>
@@ -128,7 +128,7 @@ export default function HomePage() {
 			</div>
 			<div className="mb-20 mt-10">
 				<div>
-					<TitleThree className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
+					<TitleThree className=" h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
 				</div>
 				<div className="flex flex-col items-center @[850px]:grid  @[850px]:grid-cols-3 gap-10 mt-10">
 					<div className="@[850px]:h-[400px] @[850px]:w-full bg-[#F29073] rounded-2xl flex flex-col items-center justify-center p-10">
