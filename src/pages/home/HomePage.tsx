@@ -5,19 +5,16 @@ import TitleTwo from '@/assets/Title_2.svg?react';
 import TitleThree from '@/assets/Title_3.svg?react';
 import TitleFour from '@/assets/Title_4.svg?react';
 import TitleFive from '@/assets/Title_5.svg?react';
-import PeopleOne from '@/assets/people_1.svg?react';
 import IconOne from '@/assets/icons/1.svg?react';
 import IconTwo from '@/assets/icons/2.svg?react';
 import IconThree from '@/assets/icons/3.svg?react';
 import IconFour from '@/assets/icons/4.svg?react';
 import IconFive from '@/assets/icons/5.svg?react';
 import IconSix from '@/assets/icons/6.svg?react';
-import Telegram from '@/assets/icons/TG.svg?react';
 import VK from '@/assets/icons/VK.svg?react';
 
 import PeopleTwo from '@/assets/people_2.svg?react';
 import PeopleSix from '@/assets/people_6.svg?react';
-import PeopleThree from '@/assets/people_3.svg?react';
 import PeopleFive from '@/assets/people_5.svg?react';
 import PeopleFour from '@/assets/people_4.svg?react';
 
@@ -201,8 +198,9 @@ export default function HomePage() {
 					<div className="flex  justify-center flex-col mt-20">
 						<Logo height={200} />
 						<div className="flex justify-center items-center gap-10">
-							<Telegram className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
-							<VK className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
+							<a href="https://vk.com/vmestedlydobra">
+								<VK className="h-[50px] @[300px]:h-[60px] @[400px]:h-[70px] @[500px]:h-[70px] @[700px]:h-[80px] @[900px]:h-[100px] @[1000px]:h-[110px]  " />
+							</a>
 						</div>
 					</div>
 				</div>
